@@ -67,6 +67,8 @@ const sidebars: SidebarsConfig = {
   // pages that break build:
   // 'plugins/'
   // 'newsletter'
+  // 'extensions/mouse-tracking'
+  // 'extensions/record-video'
 
   // content that needs writing:
   // 'timelines/'
