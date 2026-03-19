@@ -4,17 +4,17 @@
 
 jsPsych has several plugins that allow you to present survey questions during your experiment. The one you choose will depend on what exactly you'd like to do, and your preferences for convenience/parameterization versus flexibility.
 
-* Survey-* plugins: [`survey-likert`](../plugins/survey-likert.md), [`survey-multi-choice`](../plugins/survey-multi-choice.md), [`survey-multi-select`](../plugins/survey-multi-select.md), [`survey-text`](../plugins/survey-text.md)
+* Survey-* plugins: [`survey-likert`](), [`survey-multi-choice`](), [`survey-multi-select`](), [`survey-text`]()
     * Only one question type and one page per trial
     * Parameterization makes it easy to define questions
     * Work well with [timeline variables](timeline.md#timeline-variables)
     * Ideal for adding survey-style questions into repetitive trial procedures
     * Limited functionality and customization options
-* [`survey-html-form`](../plugins/survey-html-form.md) plugin
+* [`survey-html-form`]() plugin
     * Can mix different question types on the same page
     * No parameters for defining questions - you write the form HTML
     * Maximally flexible, so ideal if you need a lot of control over the survey content and style
-* [`survey`](../plugins/survey.md) plugin
+* [`survey`]() plugin
     * Not well-suited for use with [timeline variables](timeline.md#timeline-variables)
     * Large set of built-in question types and parameterized customization options
     * Can mix different question types on the same page
@@ -22,7 +22,7 @@ jsPsych has several plugins that allow you to present survey questions during yo
     * Parameters for defining questions, but more config/code than the `survey-*` plugins
     * Built-in convenience parameters for many survey question types and features (e.g. response validation, conditional question display, 'other'/'none'/'select all' options)
 
-The [`survey` plugin](../plugins/survey.md) differs from most other jsPsych plugins in that is a simple wrapper for an external JavaScript library called SurveyJS. This allows jsPsych users to take advantage of all of the SurveyJS features, documentation, and example code, but it also means that the `survey` plugin does not follow the same familiar conventions as most other jsPsych plugins. Users will need to familiarize themselves somewhat with the SurveyJS library in order to use the plugin. The remaining documentation on this page provides some guidance for getting started with SurveyJS and the jsPsych `survey` plugin.
+The [`survey` plugin]() differs from most other jsPsych plugins in that is a simple wrapper for an external JavaScript library called SurveyJS. This allows jsPsych users to take advantage of all of the SurveyJS features, documentation, and example code, but it also means that the `survey` plugin does not follow the same familiar conventions as most other jsPsych plugins. Users will need to familiarize themselves somewhat with the SurveyJS library in order to use the plugin. The remaining documentation on this page provides some guidance for getting started with SurveyJS and the jsPsych `survey` plugin.
 
 ## Getting started with SurveyJS
 
@@ -73,7 +73,7 @@ const survey_json = {
 };
 ```
 
-Each element is an object with a 'type', which is the element/question type (see the `survey` plugin's [Questions/Elements section](../plugins/survey.md#questionelement-types) for a list of type options). The element objects should also contain any other parameters and configuration options for that question, such as the question name (used to identify the question in the data), title (prompt shown to the participant), whether or not a response is required, and other parameters that might be relevant to that particular question type. The [Questions/Elements section](../plugins/survey.md#questionelement-types) in the `survey` plugin documentation contains links to the SurveyJS documentation for each question type, where you can find more information about the required and optional parameters.
+Each element is an object with a 'type', which is the element/question type (see the `survey` plugin's [Questions/Elements section]() for a list of type options). The element objects should also contain any other parameters and configuration options for that question, such as the question name (used to identify the question in the data), title (prompt shown to the participant), whether or not a response is required, and other parameters that might be relevant to that particular question type. The [Questions/Elements section]() in the `survey` plugin documentation contains links to the SurveyJS documentation for each question type, where you can find more information about the required and optional parameters.
 
 Once you've created the survey JSON object, as we've done above, it can be used as the `survey_json` parameter in a jsPsych `survey` trial:
 
@@ -162,7 +162,7 @@ const survey_json = {
 
 Some of the survey-level options can also be set a the page level. See the [Page API documentation](https://surveyjs.io/form-library/documentation/api-reference/page-model) for more information.
 
-For more survey JSON examples, see the [SurveyJS JSON documentation](https://surveyjs.io/form-library/documentation/design-survey/create-a-simple-survey#define-a-static-survey-model-in-json), the [Examples](../plugins/survey.md#examples) section on the `survey` plugin documentation page, and the [examples folder](https://github.com/jspsych/jsPsych/tree/main/packages/plugin-survey) in the `survey` plugin package.
+For more survey JSON examples, see the [SurveyJS JSON documentation](https://surveyjs.io/form-library/documentation/design-survey/create-a-simple-survey#define-a-static-survey-model-in-json), the [Examples]() section on the `survey` plugin documentation page, and the [examples folder](https://github.com/jspsych/jsPsych/tree/main/packages/plugin-survey) in the `survey` plugin package.
 
 
 ### Using JavaScript to create or modify the survey

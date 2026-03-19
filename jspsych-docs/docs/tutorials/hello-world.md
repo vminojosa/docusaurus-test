@@ -104,7 +104,7 @@ To initialize jsPsych we use the `initJsPsych()` function and assign the output 
 
 ### Step 4: Use a plugin to print a message
 
-For this demo we want to show some text on the screen. This is exactly what the [html-keyboard-response plugin](../plugins/html-keyboard-response.md) is designed to do. To use the plugin, we need to load it with a `<script>` tag.
+For this demo we want to show some text on the screen. This is exactly what the [html-keyboard-response plugin]() is designed to do. To use the plugin, we need to load it with a `<script>` tag.
 
 ```html hl_lines="6"
 <!DOCTYPE html>
@@ -122,7 +122,7 @@ For this demo we want to show some text on the screen. This is exactly what the 
 </html>
 ```
 
-Once the plugin is loaded we can create a trial using the plugin. To declare a trial that uses the `html-keyboard-response` plugin, we create an object with the property `type` equal to `jsPsychHtmlKeyboardResponse`. We can specify the other parameters of the plugin in the same object. Here we use the `stimulus` parameter to include a message. You can see the full set of parameters for each plugin on its [documentation page](../plugins/html-keyboard-response.md).
+Once the plugin is loaded we can create a trial using the plugin. To declare a trial that uses the `html-keyboard-response` plugin, we create an object with the property `type` equal to `jsPsychHtmlKeyboardResponse`. We can specify the other parameters of the plugin in the same object. Here we use the `stimulus` parameter to include a message. You can see the full set of parameters for each plugin on its [documentation page]().
 
 ```html hl_lines="13 14 15 16"
 <!DOCTYPE html>
@@ -289,7 +289,7 @@ To initialize jsPsych we use the `initJsPsych()` function and assign the output 
 
 ### Step 6: Use a plugin to print a message
 
-For this demo we want to show some text on the screen. This is exactly what the [html-keyboard-response plugin](../plugins/html-keyboard-response.md) is designed to do. To use the plugin, we need to load it with a `<script>` tag.
+For this demo we want to show some text on the screen. This is exactly what the [html-keyboard-response plugin]() is designed to do. To use the plugin, we need to load it with a `<script>` tag.
 
 ```html hl_lines="6"
 <!DOCTYPE html>
@@ -307,7 +307,7 @@ For this demo we want to show some text on the screen. This is exactly what the 
 </html>
 ```
 
-Once the plugin is loaded we can create a trial using the plugin. To declare a trial that uses the `html-keyboard-response` plugin, we create an object with the property `type` equal to `jsPsychHtmlKeyboardResponse`. We can specify the other parameters of the plugin in the same object. Here we use the `stimulus` parameter to include a message. You can see the full set of parameters for each plugin on its [documentation page](../plugins/html-keyboard-response.md).
+Once the plugin is loaded we can create a trial using the plugin. To declare a trial that uses the `html-keyboard-response` plugin, we create an object with the property `type` equal to `jsPsychHtmlKeyboardResponse`. We can specify the other parameters of the plugin in the same object. Here we use the `stimulus` parameter to include a message. You can see the full set of parameters for each plugin on its [documentation page]().
 
 ```html hl_lines="13 14 15 16"
 <!DOCTYPE html>
@@ -413,7 +413,7 @@ Once the plugin is imported we can create a trial using the plugin.
 To declare a trial that uses the `html-keyboard-response` plugin, we create an object with the property `type` equal to `htmlKeyboardResponse`.
 We can specify the other parameters of the plugin in the same object.
 Here we use the `stimulus` parameter to include a message.
-You can see the full set of parameters for each plugin on its [documentation page](../plugins/html-keyboard-response.md).
+You can see the full set of parameters for each plugin on its [documentation page]().
 
 ```js
 import {initJsPsych} from 'jspsych';

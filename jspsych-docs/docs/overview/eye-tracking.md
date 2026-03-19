@@ -51,7 +51,7 @@ initJsPsych({
 
 ### Initialize the camera
 
-To help the participant position their face correctly for eye tracking you can use the [webgazer-init-camera plugin](../plugins/webgazer-init-camera.md). This will show the participant what the camera sees, including facial feature landmarks, and prevent the participant from continuing until their face is in good position for eye tracking. This plugin will also trigger the experiment to request permission to access the user's webcam if it hasn't already been granted.
+To help the participant position their face correctly for eye tracking you can use the [webgazer-init-camera plugin](). This will show the participant what the camera sees, including facial feature landmarks, and prevent the participant from continuing until their face is in good position for eye tracking. This plugin will also trigger the experiment to request permission to access the user's webcam if it hasn't already been granted.
 
 
 ```js
@@ -63,7 +63,7 @@ var init_camera_trial = {
 
 ### Calibration
 
-To calibrate WebGazer, you can use the [webgazer-calibrate plugin](../plugins/webgazer-calibrate.md). This plugin allows you to specify a set of points on the screen for calibration and to choose the method for calibrating -- either clicking on each point or simply fixating on each point. The location of calibration points is specified in percentages, e.g., `[25,50]` will result in a point that is 25% of the width of the screen from the left edge and 50% of the height of the screen from the top edge. Options for controlling other details of the calibration are explained in the [documentation for the plugin](../plugins/webgazer-calibrate.md).
+To calibrate WebGazer, you can use the [webgazer-calibrate plugin](). This plugin allows you to specify a set of points on the screen for calibration and to choose the method for calibrating -- either clicking on each point or simply fixating on each point. The location of calibration points is specified in percentages, e.g., `[25,50]` will result in a point that is 25% of the width of the screen from the left edge and 50% of the height of the screen from the top edge. Options for controlling other details of the calibration are explained in the [documentation for the plugin]().
 
 Note that instructions are not included in the calibration plugin, so you'll likely want to use a different plugin (e.g., `html-button-response`) to display instructions prior to running the calibration. 
 
@@ -78,7 +78,7 @@ var calibration_trial = {
 
 ### Validation
 
-To measure the accuracy and precision of the calibration, you can use the [webgazer-vaidate plugin](../plugins/webgazer-validate.md). Like the calibration plugin, you can specify a list of points to perform validation on. Here you can specify the points as either percentages or in terms of the distance from the center of the screen in pixels. Which mode you use will probably depend on how you are defining your stimuli throughout the experiment. You can also specify the radius of tolerance around each point, and the plugin will calculate the percentage of measured gaze samples within that radius. This is a potentially useful heuristic for deciding whether or not to calibrate again. Options for controlling other details of the validation are explained in the [documentation for the plugin](../plugins/webgazer-validate.md).
+To measure the accuracy and precision of the calibration, you can use the [webgazer-vaidate plugin](). Like the calibration plugin, you can specify a list of points to perform validation on. Here you can specify the points as either percentages or in terms of the distance from the center of the screen in pixels. Which mode you use will probably depend on how you are defining your stimuli throughout the experiment. You can also specify the radius of tolerance around each point, and the plugin will calculate the percentage of measured gaze samples within that radius. This is a potentially useful heuristic for deciding whether or not to calibrate again. Options for controlling other details of the validation are explained in the [documentation for the plugin]().
 
 
 ```js
