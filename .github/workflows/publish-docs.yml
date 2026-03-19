@@ -30,7 +30,7 @@ jobs:
       - name: Upload Build Artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: build
+          path: ./jspsych-docs/build
 
       - name: Switch to gh-pages branch
         run: git checkout gh-pages
