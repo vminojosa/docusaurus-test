@@ -53,44 +53,54 @@ import htmlKeyboardResponse from '@jspsych/plugin-html-keyboard-response';
 
 ## Examples
 
-:::tip Displaying trial until participant gives a response: Code tab
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+<details>
+    <summary>Displaying trial until participant gives a response</summary>
+    <Tabs>
+        <TabItem value="code" label="Code" default>
+    ```javascript
+        var trial = {
+            type: jsPsychHtmlKeyboardResponse,
+            stimulus: '<p style="font-size:48px;color:green;">BLUE</p>',
+            choices: ['r', 'g', 'b'],
+            prompt: "<p>Is the ink color (r)ed, (g)reen, or (b)lue?</p>"
+        };
+    ```
+        </TabItem>
+        <TabItem value="demo" label="Demo" default>
+            <div style={{ textAlign: "center" }}>
+                <iframe src="/docusaurus-test/demos/jspsych-html-keyboard-response-demo1.html" width="90%;" height="500px;" frameBorder="0"></iframe>
+            </div>
+            <a target="_blank" rel="noopener noreferrer" href="/docusaurus-test/demos/jspsych-html-keyboard-response-demo1.html">
+                Open demo in new tab
+            </a>
+        </TabItem>
+    </Tabs>
+</details>
+
+<details>
+    <summary>Showing a 1 second fixation cross; no response allowed</summary>
+    <Tabs>
+    <TabItem value="code" label="Code" default>
 ```javascript
-var trial = {
-    type: jsPsychHtmlKeyboardResponse,
-    stimulus: '<p style="font-size:48px;color:green;">BLUE</p>',
-    choices: ['r', 'g', 'b'],
-    prompt: "<p>Is the ink color (r)ed, (g)reen, or (b)lue?</p>"
-};
+    var trial = {
+        type: jsPsychHtmlKeyboardResponse,
+        stimulus: '<p style="font-size:48px;">+</p>',
+        choices: "NO_KEYS",
+        trial_duration: 1000,
+    };	
 ```
-:::
-
-:::tip Displaying trial until participant gives a response: Demo tab
-<div style={{ textAlign: "center" }}>
-    <iframe src="/docusaurus-test/demos/jspsych-html-keyboard-response-demo1.html" width="90%;" height="500px;" frameBorder="0"></iframe>
-</div>
-
-<a target="_blank" rel="noopener noreferrer" href="/docusaurus-test/demos/jspsych-html-keyboard-response-demo1.html">
-    Open demo in new tab
-</a>
-:::
-
-:::tip Showing a 1 second fixation cross; no response allowed: Code tab
-```javascript
-var trial = {
-    type: jsPsychHtmlKeyboardResponse,
-    stimulus: '<p style="font-size:48px;">+</p>',
-    choices: "NO_KEYS",
-    trial_duration: 1000,
-};		
-```
-:::
-
-:::tip Showing a 1 second fixation cross; no response allowed: Demo tab
-<div style={{ textAlign: "center" }}>
-    <iframe src="/docusaurus-test/demos/jspsych-html-keyboard-response-demo2.html" width="90%;" height="500px;" frameBorder="0"></iframe>
-</div>
-
-<a target="_blank" rel="noopener noreferrer" href="/docusaurus-test/demos/jspsych-html-keyboard-response-demo2.html">
-    Open demo in new tab
-</a>
-:::
+    </TabItem>
+    <TabItem value="demo" label="Demo" default>
+        <div style={{ textAlign: "center" }}>
+            <iframe src="/docusaurus-test/demos/jspsych-html-keyboard-response-demo2.html" width="90%;" height="500px;" frameBorder="0">
+            </iframe>
+        </div>
+        <a target="_blank" rel="noopener noreferrer" href="/docusaurus-test/demos/jspsych-html-keyboard-response-demo2.html">
+            Open demo in new tab
+        </a>
+    </TabItem>
+</Tabs>
+</details>
