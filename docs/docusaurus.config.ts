@@ -113,6 +113,9 @@ const config: Config = {
           label: 'About',
         },
         {
+          type: 'search', // need to set-up search with algolia
+        },
+        {
           href: 'https://github.com/jspsych/jspsych',
           label: 'GitHub',
           position: 'right',
