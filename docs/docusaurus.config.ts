@@ -82,6 +82,10 @@ const config: Config = {
         src: 'img/jspsych-logo-no-text-mono.svg',
       },
       items: [
+        {
+          type: 'docsVersionDropdown',
+          versions: ['current', '0.1', '0.0'],
+        },
         { // Getting Started Tab
           // if a link is referenced in a sidebar, 
           // it will link to that page in the corresponding docSidebar type
@@ -111,9 +115,6 @@ const config: Config = {
           to: '/docs/about/',
           position: 'left',
           label: 'About',
-        },
-        {
-          type: 'search', // need to set-up search with algolia
         },
         {
           href: 'https://github.com/jspsych/jspsych',
